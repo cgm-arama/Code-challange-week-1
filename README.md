@@ -2,7 +2,7 @@
 Generator systems
 The grade converter,the speed governing and ticket system and the tax and revenue system. The grade converter is used to convert integers scores like(75) into letter grades like (A) once you input the score into the converter and press the convert button.
 
-The speed system converter is used to record speed of drivers and offer punishments to drivers who go above certain speed limits and suspend the driver's licence once they are demerited a certain amount of points. To apply this just input the speed and press the submit button.
+The speed system converter is used to record speed of drivers and offer punishments to drivers who go above certain speed limits and suspend the driver's licence once they are demerited a certain amount of points(1 point is demerited from the driver from 5 mph from 70 mph and licence is suspended once 12 points are demerited). To apply this just input the speed and press the submit button.
 
 The tax and revenue system is used to calculate an employees gross salary after deducting the applicable taxes and inclusions of benefits.
 
