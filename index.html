@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary calculator</title>
+</head>
+<body>
+    
+
+  <h1>Salary calculator</h1>
+  <button onClick="calcSalary()" id="button">Calculate</button>
+  <h2 id="calculate"></h2>
+  
+  <table>
+
+    <tr>
+        <td>Basic Salary</td>
+        <td><input type="number" id="salary" placeholder="Enter basic salary"></td>
+    </tr>
+
+    <tr>
+        <td>Benefits</td>
+        <td><input type="number" id="benefits"  placeholder="Enter benefits plans"></td>
+    </tr>
+   
+
+  </table>
+
+  <script type="text/javascript">
+ 
+function calcSalary(){
+    let calc = parseInt(salary.value) + parseInt(benefits.value); 
+    let nssf = 0.12
+    let nhif = 0.02
+    let paye = 0.12
+    let all = nssf * paye * nhif
+
+    final = calc - calc * all
+
+    console.log(final)
+    calculate.innerText = `Your net salary is ${final}`
+ }
+  </script>
+</body>
+</html>

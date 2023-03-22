@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Converter</title>
+</head>
+<body>
+
+  <h1>Grade Converter</h1>
+    <input placeholder="Enter points scored" id="numericGrade" />
+    <button onClick="convert()">Convert</button>
+    <h3 id="gradeDisplay"></h3>
+    <script>
+        
+        const gradeDisplay = document.getElementById(
+            "gradeDisplay");
+
+        function convert() {
+            const numeric = parseInt(numericGrade.value);
+            if (numeric > 79 ) { 
+              grade = "A";
+            } else if(numeric >= 60) {
+              grade = "B";
+            } else if(numeric >= 49) {
+              grade =  "C";
+            } else if(numeric >= 40) {
+              grade = "D";
+            } else if(numeric < 40) {
+              grade = "E";
+            }
+            console.log(grade)
+            gradeDisplay.innerText = `Your Grade is ${grade}`;
+        }
+    </script>
+
+
+<div>
+  <h1>Speed Detector</h1>
+  <input placeholder="Enter Speed" id="speedDetector" required onClick="reload()">
+  <button onClick="Convert()" id="button">Submit</button>
+  <h3 id="resultSpeed"></h3>
+</div>
+
+<script>
+//*The script tag is used in a html code to show that a block of code from javascript is about to be intoduced*//
+  const resultSpeed = document.getElementById(
+      "resultSpeed"
+  );
+//*This are the javascript functions that are to be executed when certain input are logged into the speed convertor system*//
+//*The expected output for the detector are also displayed by the conditional statements if certain input are met or exceeded*//
+  function Convert() {
+       const speed = parseInt(speedDetector.value);
+      if(speed < 0){
+         score = "The car is in reverse"
+      }else if(speed <= 0) {
+         score = "Car is not moving"
+      }else if(speed <= 70) {
+         score = "OK"
+      }else if(speed <= 75) {
+         score = "-1 merit point";
+      }else if(speed <= 80) {
+         score = "-2 merit points";
+      }else if(speed <= 85) {
+         score = "-3 merit points";
+      }else if(speed <= 90) {
+         score = "-4 merit points";
+      }else if(speed <= 95) {
+         score = "-5 merit points";
+      }else if(speed<= 100) {
+         score = "-6 merit points";
+      }else if(speed<= 105) {
+         score = "-7 merit points";
+      }else if(speed <= 110) {
+         score = "-8 merit points";
+      }else if(speed<= 115) {
+         score = "-9 merit points";
+      }else if(speed <= 120) {
+         score = "-10 merit points";
+      }else if(speed <= 125) {
+         score = "-11 merit points";
+      }else if(speed > 125) {
+         score = "License Suspended";
+      }else{
+         score = "Please fill out correctly";
+      }
+      //*what to return in the speed tester*//
+      console.log(score)
+      resultSpeed.innerText = `${score}`;
+  }
+</script>
+    
+
+    
+
+<h1>Salary calculator</h1>
+<h2 id="calculate"></h2>
+
+<table>
+
+  <tr>
+      <td>Basic Salary</td>
+      <td><input type="number" id="salary" placeholder="Enter basic salary"></td>
+  </tr>
+
+  <tr>
+      <td>Benefits</td>
+      <td><input type="number" id="benefits"  placeholder="Enter benefits plans"></td>
+  </tr>
+
+</table>
+
+<button onClick="calcSalary()" id="button">Calculate</button>
+
+
+<script type="text/javascript">
+
+function calcSalary(){
+  let calc = parseInt(salary.value) + parseInt(benefits.value); 
+  let nssf = 0.12
+  let nhif = 0.02
+  let paye = 0.12
+  let all = nssf * paye * nhif
+
+  final = calc - calc * all
+
+  console.log(final)
+  calculate.innerText = `Your net salary is ${final}`
+}
+</script>
+
+</body>
+</html>
