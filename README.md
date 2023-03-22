@@ -4,7 +4,12 @@ The grade converter,the speed governing and ticket system and the tax and revenu
 
 The speed system converter is used to record speed of drivers and offer punishments to drivers who go above certain speed limits and suspend the driver's licence once they are demerited a certain amount of points. To apply this just input the speed and press the submit button.
 
-The tax and revenue system is used to calculate an employees gross salary after deducting the applicable taxes and inclusions of benefits. All the above systems' code blocks are written in the javascript language and html. 
+The tax and revenue system is used to calculate an employees gross salary after deducting the applicable taxes and inclusions of benefits.
+
+
+All the above systems' code blocks are written in the javascript language and html. 
+
+All the above toy operators are linked to one html page named(landingpage.html)where they can be accessed and operated at once
 
 The project has a protected license of MIT.
 
