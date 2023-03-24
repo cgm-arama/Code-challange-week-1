@@ -12,7 +12,7 @@
   <h1>Salary calculator</h1>
   <button onClick="calcSalary()" id="button">Calculate</button>
   <h2 id="calculate"></h2>
-   
+  
   <table>
 
     <tr>
@@ -28,11 +28,10 @@
 
   </table>
 
+  <script type="text/javascript">//*Scripts are used to show introduction of a javacript bock of code to a html page.*//
  
-  <script type="text/javascript">
- 
-function calcSalary(){
-    let calc = parseInt(salary.value) + parseInt(benefits.value); 
+function calcSalary(){//calcSalary is the function that executes the certain calculations for the salary*//
+    let calc = parseInt(salary.value) + parseInt(benefits.value); //*parseInt is a method used to pass arguments to strings and then convert them into integers*//
     let nssf = 0.12
     let nhif = 0.02
     let paye = 0.12

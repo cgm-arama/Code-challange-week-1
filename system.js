@@ -1,6 +1,6 @@
 let resultSpeed = document.getElementById("resultSpeed");
-//conditions
-function Convert(){
+//conditions for the speed detector to issue the required demerits or passimg the driver's speed as okay *//
+function Convert(){//*Introduction  of the conditional statements for certain speeds and the resultant issuance of the speed detector system*//
     let pace = parseInt(speed.value);
     if(pace < 0){
         score = "The car is in reverse"

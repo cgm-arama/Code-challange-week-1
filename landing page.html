@@ -14,10 +14,15 @@
     <h3 id="gradeDisplay"></h3>
     <script>
         
+
+//we declare a variable and assign it the value passed into the window prompt
+//we turn the value collected by the prompt to an integer with parseInt. parseInt is a method used to pass arguments to strings and then convert them into integers*//
         const gradeDisplay = document.getElementById(
             "gradeDisplay");
 
         function convert() {
+/*we create a function to assign grades with regards to the marks with 
+a conditional statement*/
             const numeric = parseInt(numericGrade.value);
             if (numeric > 79 ) { 
               grade = "A";
@@ -31,7 +36,7 @@
               grade = "E";
             }
             console.log(grade)
-            gradeDisplay.innerText = `Your Grade is ${grade}`;
+            gradeDisplay.innerText = `Your Grade is ${grade}`;//*Shows the text that is to displayed once the button is pressed to work the generator*//
         }
     </script>
 
